@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "fgSEJ2IbE6j3E6wckKM9BkAy9XQCxVmummeNh1UodOPEOvZ8b76NezJ0KZxjC9HFpB6eKgxtAEtXsi7cmSZT7A==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\rapezzatto\\source\\repos\\github\\apezzatto\\NerdStoreEnterprise\\src\\services\\NSE.Basket.API\\NSE.Basket.API.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\rapezzatto\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.10.9\\microsoft.visualstudio.azure.containers.tools.targets.1.10.9.nupkg.sha512"
+  ],
+  "logs": []
+}

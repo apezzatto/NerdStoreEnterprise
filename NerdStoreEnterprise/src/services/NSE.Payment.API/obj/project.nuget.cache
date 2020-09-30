@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "j+K/5EqhGBLCdY3El45dmNg8DbxPM3OWydqXWtZdPDF6JhR7FqQfqC/avXJQLKSSMZaxKJSQveT8KA4BS930Jg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\rapezzatto\\source\\repos\\github\\apezzatto\\NerdStoreEnterprise\\src\\services\\NSE.Payment.API\\NSE.Payment.API.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\rapezzatto\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.10.9\\microsoft.visualstudio.azure.containers.tools.targets.1.10.9.nupkg.sha512"
+  ],
+  "logs": []
+}
