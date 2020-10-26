@@ -1,8 +1,14 @@
 {
   "version": 2,
-  "dgSpecHash": "RNn0SRtP04+8GEiZ+DJTfv53uTBJ81t5z+0lp0/Xaoyem4HryRhzz3U/R+XwVftEgg9WBx9yVqb9l8sq94HtfQ==",
+  "dgSpecHash": "ceKRBOAGm5wECd90dIqwPHKTZQyjdAJ9g5MkfpKSF56PnzsZ5bQEZHbaH6NF/1EMgHHlEGvTSXOOWcxn5ylVrg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\rapezzatto\\source\\repos\\github\\apezzatto\\NerdStoreEnterprise\\src\\buildingblocks\\NSE.Core\\NSE.Core.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\Users\\rapezzatto\\source\\repos\\github\\apezzatto\\NerdStoreEnterprise\\NerdStoreEnterprise\\NerdStoreEnterprise\\src\\buildingblocks\\NSE.Core\\NSE.Core.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\rapezzatto\\.nuget\\packages\\fluentvalidation\\8.6.2\\fluentvalidation.8.6.2.nupkg.sha512",
+    "C:\\Users\\rapezzatto\\.nuget\\packages\\mediatr\\8.0.1\\mediatr.8.0.1.nupkg.sha512",
+    "C:\\Users\\rapezzatto\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\3.1.9\\microsoft.extensions.configuration.abstractions.3.1.9.nupkg.sha512",
+    "C:\\Users\\rapezzatto\\.nuget\\packages\\microsoft.extensions.primitives\\3.1.9\\microsoft.extensions.primitives.3.1.9.nupkg.sha512",
+    "C:\\Users\\rapezzatto\\.nuget\\packages\\system.componentmodel.annotations\\4.4.1\\system.componentmodel.annotations.4.4.1.nupkg.sha512"
+  ],
   "logs": []
 }

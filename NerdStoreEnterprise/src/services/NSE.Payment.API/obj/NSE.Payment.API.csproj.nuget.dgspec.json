@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\rapezzatto\\source\\repos\\github\\apezzatto\\NerdStoreEnterprise\\src\\services\\NSE.Payment.API\\NSE.Payment.API.csproj": {}
+    "C:\\Users\\rapezzatto\\source\\repos\\github\\apezzatto\\NerdStoreEnterprise\\NerdStoreEnterprise\\NerdStoreEnterprise\\src\\services\\NSE.Payment.API\\NSE.Payment.API.csproj": {}
   },
   "projects": {
-    "C:\\Users\\rapezzatto\\source\\repos\\github\\apezzatto\\NerdStoreEnterprise\\src\\services\\NSE.Payment.API\\NSE.Payment.API.csproj": {
+    "C:\\Users\\rapezzatto\\source\\repos\\github\\apezzatto\\NerdStoreEnterprise\\NerdStoreEnterprise\\NerdStoreEnterprise\\src\\services\\NSE.Payment.API\\NSE.Payment.API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\rapezzatto\\source\\repos\\github\\apezzatto\\NerdStoreEnterprise\\src\\services\\NSE.Payment.API\\NSE.Payment.API.csproj",
+        "projectUniqueName": "C:\\Users\\rapezzatto\\source\\repos\\github\\apezzatto\\NerdStoreEnterprise\\NerdStoreEnterprise\\NerdStoreEnterprise\\src\\services\\NSE.Payment.API\\NSE.Payment.API.csproj",
         "projectName": "NSE.Payment.API",
-        "projectPath": "C:\\Users\\rapezzatto\\source\\repos\\github\\apezzatto\\NerdStoreEnterprise\\src\\services\\NSE.Payment.API\\NSE.Payment.API.csproj",
+        "projectPath": "C:\\Users\\rapezzatto\\source\\repos\\github\\apezzatto\\NerdStoreEnterprise\\NerdStoreEnterprise\\NerdStoreEnterprise\\src\\services\\NSE.Payment.API\\NSE.Payment.API.csproj",
         "packagesPath": "C:\\Users\\rapezzatto\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\rapezzatto\\source\\repos\\github\\apezzatto\\NerdStoreEnterprise\\src\\services\\NSE.Payment.API\\obj\\",
+        "outputPath": "C:\\Users\\rapezzatto\\source\\repos\\github\\apezzatto\\NerdStoreEnterprise\\NerdStoreEnterprise\\NerdStoreEnterprise\\src\\services\\NSE.Payment.API\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\rapezzatto\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -61,7 +61,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.402\\RuntimeIdentifierGraph.json"
         }
       }
     }

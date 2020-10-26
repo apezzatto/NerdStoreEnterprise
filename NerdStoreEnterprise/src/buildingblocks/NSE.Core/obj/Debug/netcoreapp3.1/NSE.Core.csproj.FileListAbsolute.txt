@@ -7,3 +7,12 @@ C:\Users\rapezzatto\source\repos\github\apezzatto\NerdStoreEnterprise\src\buildi
 C:\Users\rapezzatto\source\repos\github\apezzatto\NerdStoreEnterprise\src\buildingblocks\NSE.Core\obj\Debug\netcoreapp3.1\NSE.Core.dll
 C:\Users\rapezzatto\source\repos\github\apezzatto\NerdStoreEnterprise\src\buildingblocks\NSE.Core\obj\Debug\netcoreapp3.1\NSE.Core.pdb
 C:\Users\rapezzatto\source\repos\github\apezzatto\NerdStoreEnterprise\src\buildingblocks\NSE.Core\obj\Debug\netcoreapp3.1\NSE.Core.csprojAssemblyReference.cache
+C:\Users\rapezzatto\source\repos\github\apezzatto\NerdStoreEnterprise\NerdStoreEnterprise\NerdStoreEnterprise\src\buildingblocks\NSE.Core\bin\Debug\netcoreapp3.1\NSE.Core.deps.json
+C:\Users\rapezzatto\source\repos\github\apezzatto\NerdStoreEnterprise\NerdStoreEnterprise\NerdStoreEnterprise\src\buildingblocks\NSE.Core\bin\Debug\netcoreapp3.1\NSE.Core.dll
+C:\Users\rapezzatto\source\repos\github\apezzatto\NerdStoreEnterprise\NerdStoreEnterprise\NerdStoreEnterprise\src\buildingblocks\NSE.Core\bin\Debug\netcoreapp3.1\NSE.Core.pdb
+C:\Users\rapezzatto\source\repos\github\apezzatto\NerdStoreEnterprise\NerdStoreEnterprise\NerdStoreEnterprise\src\buildingblocks\NSE.Core\obj\Debug\netcoreapp3.1\NSE.Core.AssemblyInfoInputs.cache
+C:\Users\rapezzatto\source\repos\github\apezzatto\NerdStoreEnterprise\NerdStoreEnterprise\NerdStoreEnterprise\src\buildingblocks\NSE.Core\obj\Debug\netcoreapp3.1\NSE.Core.AssemblyInfo.cs
+C:\Users\rapezzatto\source\repos\github\apezzatto\NerdStoreEnterprise\NerdStoreEnterprise\NerdStoreEnterprise\src\buildingblocks\NSE.Core\obj\Debug\netcoreapp3.1\NSE.Core.dll
+C:\Users\rapezzatto\source\repos\github\apezzatto\NerdStoreEnterprise\NerdStoreEnterprise\NerdStoreEnterprise\src\buildingblocks\NSE.Core\obj\Debug\netcoreapp3.1\NSE.Core.pdb
+C:\Users\rapezzatto\source\repos\github\apezzatto\NerdStoreEnterprise\NerdStoreEnterprise\NerdStoreEnterprise\src\buildingblocks\NSE.Core\obj\Debug\netcoreapp3.1\NSE.Core.csproj.CoreCompileInputs.cache
+C:\Users\rapezzatto\source\repos\github\apezzatto\NerdStoreEnterprise\NerdStoreEnterprise\NerdStoreEnterprise\src\buildingblocks\NSE.Core\obj\Debug\netcoreapp3.1\NSE.Core.csprojAssemblyReference.cache

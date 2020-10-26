@@ -1,0 +1,9 @@
+C:\Users\rapezzatto\source\repos\github\apezzatto\NerdStoreEnterprise\NerdStoreEnterprise\NerdStoreEnterprise\src\buildingblocks\NSE.WebAPI.Core\bin\Debug\netcoreapp3.1\NSE.WebAPI.Core.deps.json
+C:\Users\rapezzatto\source\repos\github\apezzatto\NerdStoreEnterprise\NerdStoreEnterprise\NerdStoreEnterprise\src\buildingblocks\NSE.WebAPI.Core\bin\Debug\netcoreapp3.1\NSE.WebAPI.Core.dll
+C:\Users\rapezzatto\source\repos\github\apezzatto\NerdStoreEnterprise\NerdStoreEnterprise\NerdStoreEnterprise\src\buildingblocks\NSE.WebAPI.Core\bin\Debug\netcoreapp3.1\NSE.WebAPI.Core.pdb
+C:\Users\rapezzatto\source\repos\github\apezzatto\NerdStoreEnterprise\NerdStoreEnterprise\NerdStoreEnterprise\src\buildingblocks\NSE.WebAPI.Core\obj\Debug\netcoreapp3.1\NSE.WebAPI.Core.AssemblyInfoInputs.cache
+C:\Users\rapezzatto\source\repos\github\apezzatto\NerdStoreEnterprise\NerdStoreEnterprise\NerdStoreEnterprise\src\buildingblocks\NSE.WebAPI.Core\obj\Debug\netcoreapp3.1\NSE.WebAPI.Core.AssemblyInfo.cs
+C:\Users\rapezzatto\source\repos\github\apezzatto\NerdStoreEnterprise\NerdStoreEnterprise\NerdStoreEnterprise\src\buildingblocks\NSE.WebAPI.Core\obj\Debug\netcoreapp3.1\NSE.WebAPI.Core.csproj.CoreCompileInputs.cache
+C:\Users\rapezzatto\source\repos\github\apezzatto\NerdStoreEnterprise\NerdStoreEnterprise\NerdStoreEnterprise\src\buildingblocks\NSE.WebAPI.Core\obj\Debug\netcoreapp3.1\NSE.WebAPI.Core.dll
+C:\Users\rapezzatto\source\repos\github\apezzatto\NerdStoreEnterprise\NerdStoreEnterprise\NerdStoreEnterprise\src\buildingblocks\NSE.WebAPI.Core\obj\Debug\netcoreapp3.1\NSE.WebAPI.Core.pdb
+C:\Users\rapezzatto\source\repos\github\apezzatto\NerdStoreEnterprise\NerdStoreEnterprise\NerdStoreEnterprise\src\buildingblocks\NSE.WebAPI.Core\obj\Debug\netcoreapp3.1\NSE.WebAPI.Core.csprojAssemblyReference.cache
