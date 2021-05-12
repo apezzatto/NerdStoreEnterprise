@@ -3,10 +3,9 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
-using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using NSE.Catalogo.API.Data;
 
-namespace NSE.Catalog.API.Migrations
+namespace NSE.Catalogo.API.Migrations
 {
     [DbContext(typeof(CatalogoContext))]
     partial class CatalogoContextModelSnapshot : ModelSnapshot

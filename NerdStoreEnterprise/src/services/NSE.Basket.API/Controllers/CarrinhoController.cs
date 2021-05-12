@@ -39,7 +39,7 @@ namespace NSE.Carrinho.API.Controllers
             else
                 ManipularCarrinhoExistente(carrinho, item);
 
-            if (!OperacaoValida()) return CustomResponse();
+            if (!IsOperationValid()) return CustomResponse();
 
             await PersistirDados();
             return CustomResponse();
@@ -55,7 +55,7 @@ namespace NSE.Carrinho.API.Controllers
             carrinho.AtualizarUnidades(itemCarrinho, item.Quantidade);
 
             ValidarCarrinho(carrinho);
-            if (!OperacaoValida()) return CustomResponse();
+            if (!IsOperationValid()) return CustomResponse();
 
             _context.CarrinhoItens.Update(itemCarrinho);
             _context.CarrinhoCliente.Update(carrinho);
@@ -73,11 +73,25 @@ namespace NSE.Carrinho.API.Controllers
             if (itemCarrinho == null) return CustomResponse();
 
             ValidarCarrinho(carrinho);
-            if (!OperacaoValida()) return CustomResponse();
+            if (!IsOperationValid()) return CustomResponse();
 
             carrinho.RemoverItem(itemCarrinho);
 
             _context.CarrinhoItens.Remove(itemCarrinho);
+            _context.CarrinhoCliente.Update(carrinho);
+
+            await PersistirDados();
+            return CustomResponse();
+        }
+
+        [HttpPost]
+        [Route("carrinho/aplicar-voucher")]
+        public async Task<IActionResult> AplicarVoucher(Voucher voucher)
+        {
+            var carrinho = await ObterCarrinhoCliente();
+
+            carrinho.AplicarVoucher(voucher);
+
             _context.CarrinhoCliente.Update(carrinho);
 
             await PersistirDados();
@@ -120,13 +134,13 @@ namespace NSE.Carrinho.API.Controllers
         {
             if (item != null && produtoId != item.ProdutoId)
             {
-                AdicionarErroProcessamento("O item não corresponde ao informado");
+                AddError("O item não corresponde ao informado");
                 return null;
             }
 
             if (carrinho == null)
             {
-                AdicionarErroProcessamento("Carrinho não encontrado");
+                AddError("Carrinho não encontrado");
                 return null;
             }
 
@@ -135,7 +149,7 @@ namespace NSE.Carrinho.API.Controllers
 
             if (itemCarrinho == null || !carrinho.CarrinhoItemExistente(itemCarrinho))
             {
-                AdicionarErroProcessamento("O item não está no carrinho");
+                AddError("O item não está no carrinho");
                 return null;
             }
 
@@ -144,13 +158,13 @@ namespace NSE.Carrinho.API.Controllers
         private async Task PersistirDados()
         {
             var result = await _context.SaveChangesAsync();
-            if (result <= 0) AdicionarErroProcessamento("Não foi possível persistir os dados no banco");
+            if (result <= 0) AddError("Não foi possível persistir os dados no banco");
         }
         private bool ValidarCarrinho(CarrinhoCliente carrinho)
         {
             if (carrinho.EhValido()) return true;
 
-            carrinho.ValidationResult.Errors.ToList().ForEach(e => AdicionarErroProcessamento(e.ErrorMessage));
+            carrinho.ValidationResult.Errors.ToList().ForEach(e => AddError(e.ErrorMessage));
             return false;
         }
     }

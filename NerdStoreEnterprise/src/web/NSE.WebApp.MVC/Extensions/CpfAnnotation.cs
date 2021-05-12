@@ -9,7 +9,7 @@ namespace NSE.WebApp.MVC.Extensions
 {
     public class CpfAttribute : ValidationAttribute
     {
-        protected override System.ComponentModel.DataAnnotations.ValidationResult IsValid(object value, ValidationContext validationContext)
+        protected override ValidationResult IsValid(object value, ValidationContext validationContext)
         {
             return Cpf.Validar(value.ToString()) ? ValidationResult.Success : new ValidationResult("CPF em formato inválido");
         }

@@ -6,7 +6,7 @@ using Microsoft.Extensions.Hosting;
 using NSE.Carrinho.API.Configuration;
 using NSE.WebAPI.Core.Identidade;
 
-namespace NSE.Basket.API
+namespace NSE.Carrinho.API
 {
     public class Startup
     {
@@ -37,6 +37,8 @@ namespace NSE.Basket.API
             services.AddSwaggerConfiguration();
 
             services.RegisterServices();
+
+            services.AddMessageBusConfiguration(Configuration);
         }
 
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)

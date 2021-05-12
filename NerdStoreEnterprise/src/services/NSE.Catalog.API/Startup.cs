@@ -6,7 +6,7 @@ using Microsoft.Extensions.Hosting;
 using NSE.Catalogo.API.Configuration;
 using NSE.WebAPI.Core.Identidade;
 
-namespace NSE.Catalog.API
+namespace NSE.Catalogo.API
 {
     public class Startup
     {
@@ -31,6 +31,8 @@ namespace NSE.Catalog.API
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddApiConfiguration(Configuration);
+
+            services.AddMessageBusConfiguration(Configuration);
 
             services.AddJwtConfiguration(Configuration);
 

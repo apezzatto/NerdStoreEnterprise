@@ -1,26 +1,27 @@
-﻿using FluentValidation.Results;
+﻿using System.Collections.Generic;
+using System.Linq;
+using FluentValidation.Results;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.ModelBinding;
-using System.Collections.Generic;
-using System.Linq;
+using NSE.Core.Communication;
 
 namespace NSE.WebAPI.Core.Controllers
 {
     [ApiController]
     public abstract class MainController : Controller
     {
-        protected ICollection<string> Erros = new List<string>();
+        protected ICollection<string> ErrosList = new List<string>();
 
         protected ActionResult CustomResponse(object result = null)
         {
-            if (OperacaoValida())
+            if (IsOperationValid())
             {
                 return Ok(result);
             }
 
             return BadRequest(new ValidationProblemDetails(new Dictionary<string, string[]>
             {
-                { "Mensagens", Erros.ToArray() }
+                { "Messages", ErrosList.ToArray() }
             }));
         }
 
@@ -29,7 +30,7 @@ namespace NSE.WebAPI.Core.Controllers
             var erros = modelState.Values.SelectMany(e => e.Errors);
             foreach (var erro in erros)
             {
-                AdicionarErroProcessamento(erro.ErrorMessage);
+                AddError(erro.ErrorMessage);
             }
 
             return CustomResponse();
@@ -39,25 +40,44 @@ namespace NSE.WebAPI.Core.Controllers
         {
             foreach (var erro in validationResult.Errors)
             {
-                AdicionarErroProcessamento(erro.ErrorMessage);
+                AddError(erro.ErrorMessage);
             }
 
             return CustomResponse();
         }
 
-        protected bool OperacaoValida()
+        protected ActionResult CustomResponse(ResponseResult responseResult)
         {
-            return !Erros.Any();
+            ResponseHasErrors(responseResult);
+
+            return CustomResponse();
         }
 
-        protected void AdicionarErroProcessamento(string erro)
+        protected bool ResponseHasErrors(ResponseResult responseResult)
         {
-            Erros.Add(erro);
+            if (responseResult == null || !responseResult.Errors.Messages.Any()) return false;
+
+            foreach (var mensagem in responseResult.Errors.Messages)
+            {
+                AddError(mensagem);
+            }
+
+            return true;
         }
 
-        protected void LimparErrosProcessamento()
+        protected bool IsOperationValid()
         {
-            Erros.Clear();
+            return !ErrosList.Any();
+        }
+
+        protected void AddError(string erro)
+        {
+            ErrosList.Add(erro);
+        }
+
+        protected void ClearErrorsList()
+        {
+            ErrosList.Clear();
         }
     }
 }

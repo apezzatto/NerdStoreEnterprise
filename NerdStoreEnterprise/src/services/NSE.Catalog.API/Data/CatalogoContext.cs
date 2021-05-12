@@ -1,8 +1,8 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using System.Linq;
 using NSE.Catalogo.API.Models;
-using System.Threading.Tasks;
 using NSE.Core.Data;
+using System.Threading.Tasks;
 using FluentValidation.Results;
 using NSE.Core.Messages;
 
@@ -14,12 +14,7 @@ namespace NSE.Catalogo.API.Data
             : base(options) { }
 
         public DbSet<Produto> Produtos { get; set; }
-
-        public async Task<bool> Commit()
-        {
-            return await base.SaveChangesAsync() > 0;
-        }
-
+        
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.Ignore<ValidationResult>();
@@ -30,6 +25,11 @@ namespace NSE.Catalogo.API.Data
                 property.SetColumnType("varchar(100)");
 
             modelBuilder.ApplyConfigurationsFromAssembly(typeof(CatalogoContext).Assembly);
+        }
+
+        public async Task<bool> Commit()
+        {
+            return await base.SaveChangesAsync() > 0;
         }
     }
 }
